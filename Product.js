@@ -6,7 +6,6 @@ class Product{
         this.inStock = 0
         this.discount = discount
         this.new_price = new_price
-
     }
 
     addToStock(quantity){
@@ -15,16 +14,6 @@ class Product{
     calculateDiscount(discount){
         this.new_price = this.price - (this.price * discount / 100)
         this.discount = discount
-
-        console.log(`
-            Nome do produto: ${this.name}
-            Descrição do produto: ${this.description}
-            Valor do produto: ${this.price}
-            Quantidade no estoque: ${this.inStock}
-            ==================================
-            Desconto no produto: ${this.discount}
-            Novo valor do produto: ${this.new_price}
-        `)
     }
 }
 
@@ -36,3 +25,12 @@ const nitro5 = new Product(
 nitro5.addToStock(10)
 nitro5.calculateDiscount(5)
 
+console.log(`
+    Nome do produto: ${nitro5.name}
+    Descrição do produto: ${nitro5.description}
+    Valor do produto: ${nitro5.price}
+    Quantidade no estoque: ${nitro5.inStock}
+    ==================================
+    Desconto no produto: ${nitro5.discount}
+    Novo valor do produto: ${nitro5.new_price}
+`)
