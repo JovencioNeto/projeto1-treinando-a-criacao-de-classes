@@ -5,7 +5,7 @@ class User{
         this.password = password
     }
 
-    publish(email, password) {
+    login(email, password) {
         if (this.email === email && this.password === password) {
             console.log(`${this.fullname}: Login sucess!`)
         } else {
