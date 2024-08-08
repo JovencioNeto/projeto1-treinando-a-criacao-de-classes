@@ -19,4 +19,4 @@ const jonh = new User(
     'neymarprime@gmail.com',
     '123456789'
 )
-jonh.publish('neymarprime@gmail.com', '123456789')
+jonh.login('neymarprime@gmail.com', '123456789')
