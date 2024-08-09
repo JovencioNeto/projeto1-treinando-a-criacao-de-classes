@@ -28,9 +28,9 @@ nitro5.calculateDiscount(5)
 console.log(`
     Nome do produto: ${nitro5.name}
     Descrição do produto: ${nitro5.description}
-    Valor do produto: ${'R$' + nitro5.price + '.00'}
+    Valor do produto: R$${nitro5.price}.00
     Quantidade no estoque: ${nitro5.inStock}
     ==================================
-    Desconto no produto: ${nitro5.discount  + '%'} 
-    Novo valor do produto: ${'R$' + nitro5.new_price + '.00'}
+    Desconto no produto: ${nitro5.discount}%
+    Novo valor do produto: R$${nitro5.new_price}.00
 `)
